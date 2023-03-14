@@ -1,6 +1,7 @@
 import Link from "next/link";
+import type { FC } from "react";
 
-export default function Header() {
+const Header: FC = () => {
   return (
     <nav className="flex flex-row justify-between font-mono text-slate-200">
       <div>
@@ -22,4 +23,6 @@ export default function Header() {
       </ul>
     </nav>
   );
-}
+};
+
+export default Header;

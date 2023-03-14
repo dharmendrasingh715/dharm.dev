@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+import type { FC } from "react";
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <div className="app theme-dark">
       <div className="bg-gray-500 h-screen">
@@ -23,4 +24,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
