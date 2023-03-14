@@ -1,4 +1,3 @@
-const Layout = ({}) => {
-    
-}
+const Layout = ({}) => {};
 export default Layout;
+export {};
