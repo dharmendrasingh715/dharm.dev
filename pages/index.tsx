@@ -16,7 +16,7 @@ const Home: FC = () => {
           <main className="flex flex-col">
             <Header />
             <div className="border rounded-sm border-gray-400 bg-gray-300 ">
-              Get started by editing <code>pages/index.js</code>
+              Get started by editing the <code>pages/index.js</code>
             </div>
           </main>
           <Footer />
