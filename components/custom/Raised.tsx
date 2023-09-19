@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-const Raised: FC = ({ children }) => {
+const Raised: FC = () => {
   return <div className="bg-white shadow-raised-box">{children}</div>;
 };
 
