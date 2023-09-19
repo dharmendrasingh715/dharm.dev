@@ -24,8 +24,11 @@
       "@components/*": [
         "components/*"
       ],
+      "@lib/*": [
+        "lib/*"
+      ],
       "@library/*": [
-        "components/library/*"
+        "components/ui/*"
       ],
       "@styles/*": [
         "styles/*"

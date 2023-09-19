@@ -3,25 +3,22 @@ import type { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <nav className="flex flex-row justify-between font-mono text-slate-200">
-      <div>
-        <Link href="/">home</Link>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
+      <div className="container flex h-14 items-center">
+        <div className="mr-4 hidden md:flex">
+          <Link href="/">
+            <a className="mr-6 flex items-center space-x-2">Dharmendra Singh</a>
+          </Link>
+        </div>
+        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <nav className="flex items-center space-x-6">
+            <Link href="/blog">Blog</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/about">About</Link>
+          </nav>
+        </div>
       </div>
-      <ul className="flex">
-        <li className="px-7 pt-2.5 bg-teal-400 bg-opacity-50 z-0 rounded-tl-xl rounded-tr-lg h-10 hover:bg-teal-500 hover:z-40">
-          <Link href="/">Home</Link>
-        </li>
-        <li className="px-7 pt-2.5 bg-red-400 bg-opacity-50 z-10 rounded-tl-xl rounded-tr-lg h-10 -ml-2 hover:bg-red-500 hover:z-40">
-          <Link href="/blog">Blog</Link>
-        </li>
-        <li className="px-7 pt-2.5 bg-amber-400 bg-opacity-50 z-20 rounded-tl-xl rounded-tr-lg h-10 -ml-2 hover:bg-amber-500 hover:z-40">
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li className="px-7 pt-2.5 bg-lime-400 bg-opacity-50 z-30 rounded-tl-xl rounded-tr-lg h-10 -ml-2 hover:bg-lime-500 hover:z-40">
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
-    </nav>
+    </header>
   );
 };
 
