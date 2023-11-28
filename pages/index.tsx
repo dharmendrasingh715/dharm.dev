@@ -1,27 +1,25 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
-import Aside from "@components/Aside";
 import type { FC } from "react";
-import { Button } from "@components/ui/button";
 
 const Home: FC = () => {
   return (
-    <div className="app min-h-screen bg-background font-sans">
-      <div className="relative flex min-h-screen flex-col">
+    <div className="app font-roboto text-gray-600">
+      <div className="min-h-screen">
         <Head>
           <title>Dharmendra Singh Home Page</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Header />
-        <div className="flex-1">
-          <div className="border-b">
-            <div className="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
-              <Aside />
-              Get started by editing the <code>pages/index.js</code>
-              <Button className="bg-white">Button</Button>
+        <div className="container mx-auto min-h-screen grid grid-cols-8">
+          <Header />
+          <main className="bg-gray-100 col-span-6 px-16 py-6">
+            <div className="">
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis possimus repudiandae eligendi obcaecati a non deserunt excepturi. Consectetur esse aut veniam a, cumque provident corrupti, deserunt excepturi rem modi quas nesciunt ut consequuntur quo eius illum soluta. Cumque officia aliquid hic eum iure veritatis saepe, repellendus soluta! Unde, minima explicabo beatae rem perferendis consequuntur tempore hic cum est inventore iure, doloribus debitis iste facere molestiae placeat et sapiente. Vero repellendus sint necessitatibus? Tempora, voluptate amet necessitatibus quis, quaerat alias accusamus commodi dignissimos veritatis nihil totam, ipsam incidunt laboriosam! Nisi quia facere quod asperiores ipsa pariatur sapiente aut eos quibusdam?
+              </div>
             </div>
-          </div>
+          </main>
         </div>
         <Footer />
       </div>
